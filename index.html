@@ -311,7 +311,7 @@
         // Load games data
         async function loadGames() {
             try {
-                const response = await fetch('ps4_games_expanded.json');
+                const response = await fetch('ps4_games_with_downloads.json');
                 allGames = await response.json();
                 displayGames(allGames);
                 document.getElementById('searchInfo').textContent = `Showing all ${allGames.length.toLocaleString()} games`;
