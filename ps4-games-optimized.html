@@ -295,7 +295,7 @@
         
         function loadGames() {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'ps4-games-database/ps4_games_expanded.json', true);
+            xhr.open('GET', 'ps4-games-database/ps4_games_with_download.json', true);
             
             xhr.onprogress = function(e) {
                 if (e.lengthComputable) {
